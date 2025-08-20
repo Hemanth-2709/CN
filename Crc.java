@@ -3,10 +3,8 @@ package Program1;
 
 import java.io.*;
 public class Crc {
-public static void main(String args[]) throws
-IOException {
-BufferedReader br=new BufferedReader(new
-InputStreamReader(System.in));
+public static void main(String args[]) throws IOException {
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 int[ ] data;
 int[ ]div;
 int[ ]divisor;
@@ -46,7 +44,7 @@ for(int j=0; j<div.length; j++){
 rem[j] = div[j];
 }
 rem=divide(div, divisor, rem);
-for(int i=0;i<div.length;i++) //append dividend and ramainder
+for(int i=0;i<div.length;i++) 
 {
 crc[i]=(div[i]^rem[i]);
 }
