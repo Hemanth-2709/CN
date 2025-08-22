@@ -47,13 +47,13 @@ for (int vertex = 1; vertex <= num_ver; vertex++)
 {
 System.out.println("distance of source " + source + " to "+ vertex + " is " + D[vertex]);
 }
-
 }
 public static void main(String[] args) {
 int num_ver = 0;
 int source;
 Scanner scanner=new Scanner(System.in);
-System.out.println("Enter the number of vertices"); num_ver = scanner.nextInt();
+System.out.println("Enter the number of vertices"); 
+num_ver = scanner.nextInt();
 int A[][] = new int[num_ver + 1][num_ver + 1];
 System.out.println("Enter the adjacency matrix");
 for (int sn = 1; sn <= num_ver; sn++)
